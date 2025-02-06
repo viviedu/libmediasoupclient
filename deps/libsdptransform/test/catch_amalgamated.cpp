@@ -3896,7 +3896,7 @@ namespace Catch {
             sigaction(signalDefs[i].id, &oldSigActions[i], nullptr);
         }
         // Return the old stack
-        sigaltstack(&oldSigStack, nullptr);
+        // sigaltstack(&oldSigStack, nullptr);
     }
 
     static void handleSignal( int sig ) {
@@ -3935,7 +3935,7 @@ namespace Catch {
         sigStack.ss_sp = altStackMem;
         sigStack.ss_size = altStackSize;
         sigStack.ss_flags = 0;
-        sigaltstack(&sigStack, &oldSigStack);
+        // sigaltstack(&sigStack, &oldSigStack);
         struct sigaction sa = { };
 
         sa.sa_handler = handleSignal;
