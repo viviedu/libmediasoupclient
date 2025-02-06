@@ -113,8 +113,8 @@ endif()
 message(STATUS "\nFetching libsdptransform...\n")
 FetchContent_Declare(
 	libsdptransform
-  	GIT_REPOSITORY https://github.com/ibc/libsdptransform.git
-  	GIT_TAG 1.2.10
+  	GIT_REPOSITORY https://github.com/viviedu/libsdptransform.git
+  	GIT_TAG dc7718c2f491f71defac2a4ce2acdf1743d48874
 )
 FetchContent_MakeAvailable(libsdptransform)
 

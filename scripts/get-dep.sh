@@ -45,8 +45,8 @@ function get_dep()
 
 function get_libsdptransform()
 {
-	GIT_REPO="https://github.com/ibc/libsdptransform.git"
-	GIT_TAG="1.2.10"
+	GIT_REPO="https://github.com/viviedu/libsdptransform.git"
+	GIT_TAG="dc7718c2f491f71defac2a4ce2acdf1743d48874"
 	DEST="deps/libsdptransform"
 
 	get_dep "${GIT_REPO}" "${GIT_TAG}" "${DEST}"
